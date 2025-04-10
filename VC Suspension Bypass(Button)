@@ -24,12 +24,6 @@ button.MouseButton1Click:Connect(function()
     local voiceChatService = game:GetService("VoiceChatService")
     if voiceChatService then
         voiceChatService:joinVoice()
-        
-        local message = Instance.new("Message")
-        message.Text = "VC Bypassed"
-        message.Parent = workspace
-        wait(0.2)
-        message:Destroy()
     else
         warn("VoiceChatService is not available.")
     end
